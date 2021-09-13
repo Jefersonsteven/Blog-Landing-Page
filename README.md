@@ -1,1 +1,1 @@
-# Blog-Landing-Page
+# Frontend Mentor - Blogr landing page
