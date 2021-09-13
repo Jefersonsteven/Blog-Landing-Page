@@ -1,0 +1,37 @@
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.css ***!
+  \****************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+#root {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2d11c9;
+}
+
+#root h1 {
+  font-size: 4rem;
+  color: white;
+}
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/components/global.scss ***!
+  \****************************************************************************************************************************/
+#root h1 {
+  font-size: 4rem;
+  color: white;
+}

@@ -1,0 +1,43 @@
+{
+  "name": "blog-landing-page",
+  "version": "1.0.0",
+  "description": "Este proyecto sera la solucion del challenge de Frontend Mentor Para implemetar la solucion usare Javascript, html, css y sasss, la configuracion del proyecto la realizare con webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development",
+    "watch": "webpack run dev --watch"
+  },
+  "keywords": [
+    "js",
+    "blog",
+    "landing",
+    "page",
+    "sass",
+    "html"
+  ],
+  "author": "Jefferson Steven",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.3.0",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.39.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack-dev-server": "^4.2.0"
+  }
+}

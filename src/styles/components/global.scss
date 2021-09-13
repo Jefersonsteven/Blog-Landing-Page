@@ -1,0 +1,24 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+#root {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(45, 17, 201);
+}
