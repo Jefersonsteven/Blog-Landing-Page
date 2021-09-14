@@ -1,10 +1,18 @@
-/*!****************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.css ***!
-  \****************************************************************************************************************/
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss ***!
+  \*****************************************************************************************************************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
@@ -12,8 +20,9 @@ html {
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: 1.6rem;
+  color: white;
 }
 
 #root {
@@ -21,17 +30,110 @@ body {
   place-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #2d11c9;
 }
 
-#root h1 {
-  font-size: 4rem;
-  color: white;
+body {
+  background-color: #1f3f5b;
 }
-/*!****************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/components/global.scss ***!
-  \****************************************************************************************************************************/
-#root h1 {
-  font-size: 4rem;
+
+.header-content {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+.header-content .header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 25px 0px 25px;
+}
+.header-content .header__menu-content {
+  top: 0;
+  width: 324px;
+  max-height: 511px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.header-content .header__menu-content .header__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: #1f3f5b;
+  margin-top: 70px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+  border-radius: 5px;
+}
+.header-content .header__menu-content .header__menu--nav {
+  width: 80%;
+}
+.header-content .header__menu-content .header__menu--nav .menu {
+  width: 100%;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(44, 45, 63, 0.08);
+}
+.header-content .header__menu-content .header__menu--nav .menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.header-content .header__menu-content .header__menu--nav .menu li p {
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+.header-content .header__menu-content .header__menu--nav .menu li img {
+  width: 8px;
+  height: 4px;
+}
+.header-content .header__menu-content .header__menu--nav .menu__option-submenu {
+  display: none;
+  width: 100%;
+  height: 150px;
+  padding: 20px 0px;
+  background-color: rgba(44, 45, 63, 0.08);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.header-content .header__menu-content .header__menu--nav .menu__option-submenu li {
+  margin: 0;
+}
+.header-content .header__menu-content .header__menu--nav .menu__option-submenu li a {
+  color: #1f3f5b;
+}
+.header-content .header__menu-content .header__menu--nav .menu__option-submenu li:nth-child(2) {
+  margin: 25px 0px;
+}
+.header-content .header__menu-content .header__menu--bottons {
+  display: flex;
+  flex-direction: column;
+}
+.header-content .header__menu-content .header__menu--bottons button:nth-child(1) {
+  border: none;
+  background-color: transparent;
+  margin: 25px 0px;
+  font-size: 1.8rem;
+  color: #1f3f5b;
+}
+.header-content .header__menu-content .header__menu--bottons button:nth-child(2) {
+  width: 137px;
+  height: 48px;
+  background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+  border-radius: 28px;
   color: white;
+  display: grid;
+  place-items: center;
+  border: none;
+  font-size: 1.8rem;
+}
+.header-content .header__menu-content .menu-mobile {
+  display: flex;
 }

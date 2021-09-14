@@ -26,13 +26,22 @@ $ubuntu: 'Ubuntu', sans-serif;
     box-sizing: border-box;
 }
 
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: $overpass;
     font-size: 1.6rem;
+    color: $white;
 }
 
 #root {
@@ -40,5 +49,16 @@ body {
     place-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(45, 17, 201);
+}
+
+@mixin button {
+    width: 137px;
+    height: 48px;
+    background-image: linear-gradient(to right, $very-light-red, $light-red);
+    border-radius: 28px;
+    color: $white;
+    display: grid;
+    place-items: center;
+    border: none;
+    font-size: 1.8rem;
 }

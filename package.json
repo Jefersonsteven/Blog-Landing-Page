@@ -21,6 +21,7 @@
   "author": "Jefferson Steven",
   "license": "MIT",
   "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.3.0",
     "webpack": "^5.52.1",
