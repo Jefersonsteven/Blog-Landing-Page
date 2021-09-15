@@ -1,10 +1,12 @@
-import { Header } from './components/Header.jsx'
-
-const App = () =>
+export const App = () =>
 {
     return (
-        Header()
-    );
+        <div>
+            <header className="header"></header>
+            <main className="main"></main>
+            <footer className="footer"></footer>
+        </div>
+    )
 };
 
 export default App;

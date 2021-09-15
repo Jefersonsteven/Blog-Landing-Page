@@ -1,8 +1,15 @@
 import ReactDOM from 'react-dom';
 import App from './App';
 import './styles/styles.scss';
+import { Header } from './components/Header.jsx'
+import { Main } from './components/Main.jsx'
+import { Footer } from './components/Footer.jsx'
+import React from 'react';
 
 ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Header />, document.querySelector('header'));
+ReactDOM.render(<Main />, document.querySelector('main'));
+ReactDOM.render(<Footer />, document.querySelector('footer'));
 
 
 //{

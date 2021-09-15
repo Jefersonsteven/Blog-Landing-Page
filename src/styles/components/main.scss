@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    padding-top: 220px;
+    &-content {
+        .main__introduction-content {
+            .main__introduction {
+                &__title {
+                    font-size: 1.5rem;
+                }
+                &__section {
+                    &-articles {
+                        & articles {
+                            & h3 {
+                                font-size: 1.5rem;
+                            }
+                            & p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                    & figure {
+                        & img {
+                            width: 326px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
